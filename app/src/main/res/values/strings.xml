@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MultiCoder</string>
+    <string name="Welcome">Bienvenido</string>
+    <string name="Username">Nombre de usuario</string>
+    <string name="Password">Contraseña</string>
+    <string name="LogIn">Iniciar sesión</string>
+    <string name="Forgot_password">¿Olvidó su contraseña?</string>
+    <string name="New_account">¿No tienes una cuenta? \t\t\t\t\t Registrarse</string>
+    <string name="Email">Correo</string>
+    <string name="Ready">Listo</string>
+    <string name="Login_error">Usuario o contraseña incorrecta</string>
+    <string name="Email_error">Correo inexistente</string>
+    <string name="User_found">\t\t\t\t\t Usuario encontrado</string>
+    <string name="Instructions_email">Por favor escribe tu dirección de correo electrónico y haz click en el botón de \'Listo\'. Te enviaremos un enlace con el cual podrás cambiarla.</string>
+    <string name="Forgot_password2">¿Olvidaste tu contraseña?</string>
+    <string name="Password_change">Cambio de contraseña</string>
+    <string name="Instructions_password">Escribe tu nueva contraseña y presiona en \'Listo\' para continuar.</string>
+    <string name="New_password">Contraseña nueva</string>
+    <string name="User_not_found">\t\t\t\t\t Usuario no encontrado</string>
+    <string name="Wrong_password">\t\t\t\t\t Respuesta inválida</string>
+    <string name="Register">Regístrate</string>
+    <string name="Register2">REgistrarse</string>
+    <string name="Name">Nombre</string>
+    <string name="Name_not_valid">* Nombre inválido</string>
+    <string name="Username_not_valid">* Este usuario ya existe</string>
+    <string name="Email_not_valid">* Correo electrónico inválido</string>
+    <string name="Password_not_valid">* Contraseña inválida</string>
+</resources>
