@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="@dimen/big_gap"
+            android:layout_height="@dimen/big_gap"
+            android:layout_marginTop="@dimen/small_gap"
+            android:layout_marginEnd="@dimen/small_gap"
+            android:src="@drawable/ic_baseline_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_gap"
+            android:adjustViewBounds="true"
+            android:src="@drawable/Logo_white_font"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/welcome_text_view"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Your_courses"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CSharp_card_view"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="@dimen/big_gap"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/big_gap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewCsharp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/CSharp_logo" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/goto_CSharp_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_gap"
+                    app:cardBackgroundColor="@color/background_color2"
+                    app:cardCornerRadius="@dimen/big_gap">
+
+                    <TextView
+                        android:id="@+id/goto_csharp_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/small_gap"
+                        android:text="@string/Go_to_course"
+                        android:textColor="@color/white" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/python_card_view"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="@dimen/big_gap"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/big_gap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewPython"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/python_logo" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Pyton_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_gap"
+                    app:cardBackgroundColor="@color/background_color2"
+                    app:cardCornerRadius="@dimen/big_gap">
+
+                    <TextView
+                        android:id="@+id/pyton_course_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/small_gap"
+                        android:text="@string/Go_to_course"
+                        android:textColor="@color/white" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/JS_card_view"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/big_gap"
+            app:layout_constraintBottom_toBottomOf="@id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewJS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/JS_logo" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/goto_JS_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_gap"
+                    app:cardBackgroundColor="@color/background_color2"
+                    app:cardCornerRadius="@dimen/big_gap">
+
+                    <TextView
+                        android:id="@+id/goto_JS_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/small_gap"
+                        android:text="@string/Go_to_course"
+                        android:textColor="@color/white" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -25,4 +25,17 @@
     <string name="Username_not_valid">* Este usuario ya existe</string>
     <string name="Email_not_valid">* Correo electrónico inválido</string>
     <string name="Password_not_valid">* Contraseña inválida</string>
+    <string name="Lets_begin">¡Comencemos!</string>
+    <string name="Welcome_text">MultiCoder es una plataforma donde empezarás a desarrollarte como programador. \n\n ¡Échale un vistazo a los cursos y comienza tu aprendizaje!</string>
+    <string name="Your_courses">Tus Cursos</string>
+    <string name="Go_to_course">Ir al curso</string>
+    <string name="Programing_languages">Lenguajes de programación</string>
+    <string name="CSharp">C# - C-Sharp</string>
+    <string name="CSharp_text">Es un lenguaje de programación multiparadigma desarrollado y estandarizado por la empresa Microsoft como parte de su plataforma .NET</string>
+    <string name="JS">JavaScript - JS</string>
+    <string name="JS_text">Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript.</string>
+    <string name="Python">Python</string>
+    <string name="Python_text">Es un lenguaje de alto nivel de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código, se utiliza para desarrollar aplicaciones de todo tipo.</string>
+    <string name="Units">Unidades</string>
+    <string name="go_to_unit">Ir a la unidad</string>
 </resources>

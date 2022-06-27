@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/programing_language_text_view"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Programing_languages"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/background" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".2" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Csharp_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_gap"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/big_gap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewCsharp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/CSharp_logo" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/goto_CSharp_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_gap"
+                        app:cardBackgroundColor="@color/background_color2"
+                        app:cardCornerRadius="@dimen/big_gap">
+
+                        <TextView
+                            android:id="@+id/goto_csharp_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/small_gap"
+                            android:text="@string/Go_to_course"
+                            android:textColor="@color/white" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5">
+
+                    <ImageView
+                        android:id="@+id/fav_image_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_favorite"
+                        android:layout_marginTop="@dimen/small_gap"
+                        android:layout_marginEnd="@dimen/small_gap"
+                        android:layout_gravity="end"/>
+
+                    <TextView
+                        android:id="@+id/csharp_title_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/CSharp"
+                        style="@style/TextAppearance.MaterialComponents.Headline4"
+                        android:textColor="@color/background_color2"/>
+
+                    <TextView
+                        android:id="@+id/csharp_description_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/CSharp_text"
+                        android:textColor="@color/background_color2"
+                        android:layout_marginBottom="@dimen/small_gap"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/JS_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_gap"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/big_gap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Csharp_card_view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewJS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/JS_logo" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/goto_JS_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_gap"
+                        app:cardBackgroundColor="@color/background_color2"
+                        app:cardCornerRadius="@dimen/big_gap">
+
+                        <TextView
+                            android:id="@+id/goto_JS_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/small_gap"
+                            android:text="@string/Go_to_course"
+                            android:textColor="@color/white" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fav_image_view2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/small_gap"
+                        android:layout_marginEnd="@dimen/small_gap"
+                        android:src="@drawable/ic_baseline_favorite" />
+
+                    <TextView
+                        android:id="@+id/JS_title_text_view"
+                        style="@style/TextAppearance.MaterialComponents.Headline4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/JS"
+                        android:textColor="@color/background_color2" />
+
+                    <TextView
+                        android:id="@+id/JS_description_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/small_gap"
+                        android:text="@string/JS_text"
+                        android:textColor="@color/background_color2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Pyton_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_gap"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/big_gap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/JS_card_view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewPython"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/python_logo" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/goto_Python_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_gap"
+                        app:cardBackgroundColor="@color/background_color2"
+                        app:cardCornerRadius="@dimen/big_gap">
+
+                        <TextView
+                            android:id="@+id/goto_Python_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/small_gap"
+                            android:text="@string/Go_to_course"
+                            android:textColor="@color/white" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fav_image_view3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/small_gap"
+                        android:layout_marginEnd="@dimen/small_gap"
+                        android:src="@drawable/ic_baseline_favorite" />
+
+                    <TextView
+                        android:id="@+id/Python_title_text_view"
+                        style="@style/TextAppearance.MaterialComponents.Headline4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Python"
+                        android:textColor="@color/background_color2" />
+
+                    <TextView
+                        android:id="@+id/Python_description_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/small_gap"
+                        android:text="@string/Python_text"
+                        android:textColor="@color/background_color2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

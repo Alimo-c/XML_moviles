@@ -5,9 +5,14 @@
       <map>
         <entry key="..\:/Android/MultiCoder/app/src/main/res/layout/activity_change_password.xml" value="0.25416666666666665" />
         <entry key="..\:/Android/MultiCoder/app/src/main/res/layout/activity_change_password2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/MultiCoder/app/src/main/res/layout/activity_courses.xml" value="0.25416666666666665" />
         <entry key="..\:/Android/MultiCoder/app/src/main/res/layout/activity_login.xml" value="0.2490740740740741" />
         <entry key="..\:/Android/MultiCoder/app/src/main/res/layout/activity_main.xml" value="0.2490740740740741" />
         <entry key="..\:/Android/MultiCoder/app/src/main/res/layout/activity_signin.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/MultiCoder/app/src/main/res/layout/activity_unit.xml" value="0.2490740740740741" />
+        <entry key="..\:/Android/MultiCoder/app/src/main/res/layout/activity_unit_selection.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/MultiCoder/app/src/main/res/layout/main_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/MultiCoder/app/src/main/res/layout/main_page_begin.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
