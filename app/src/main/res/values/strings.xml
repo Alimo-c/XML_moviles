@@ -38,4 +38,14 @@
     <string name="Python_text">Es un lenguaje de alto nivel de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código, se utiliza para desarrollar aplicaciones de todo tipo.</string>
     <string name="Units">Unidades</string>
     <string name="go_to_unit">Ir a la unidad</string>
+    <string name="Achievements">Logros</string>
+    <string name="Achievement">¡Sigue aprendiendo y gana tu primera insignia!</string>
+    <string name="Account">CUENTA</string>
+    <string name="App_access">Acceso a la app</string>
+    <string name="Access_type">Tiene acceso ilimitado</string>
+    <string name="Thanks">Agradecimientos</string>
+    <string name="Free">Gratis</string>
+    <string name="About">Acerca de</string>
+    <string name="Authors">Autores</string>
+    <string name="Edit">Editar</string>
 </resources>
